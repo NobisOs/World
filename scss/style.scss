@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #333;
+}
+.card {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__body {
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+		background-color: #fff;
+		// border-radius: 8px;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
+	&__img {
+		background-image: url("../img/blue-tit-g173003128_1920.jpg");
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		transition: transform 0.5s;
+		cursor: cell;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+	.card1 {
+		background-image: linear-gradient(
+			to left,
+			#051937,
+			#004d7a,
+			#008793,
+			#00bf72,
+			#a8eb12
+		);
+		height: 400px;
+		width: 400px;
+		background-color: #fff;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		&__heading {
+			color: #fff;
+			font-size: 1.5rem;
+			text-align: center;
+			margin-top: 2em;
+			padding: 1em;
+		}
+		&__text {
+			text-align: center;
+			color: #fff;
+			font-size: 1.1rem;
+			padding: 1.5em;
+		}
+		&__contact {
+			display: flex;
+			justify-content: space-around;
+
+			i {
+				margin-top: 0.7em;
+				padding: 0.3em;
+				font-size: 3rem;
+				// color: #fff;
+				transition: 0.3s;
+			}
+		}
+	}
+}
+.fa-brands:hover {
+	transform: scale(1.2);
+}
+.fa-facebook:hover {
+	color: blue;
+}
+.fa-instagram:hover {
+	color: #dc1aa7;
+}
+.fa-square-twitter:hover {
+	color: royalblue;
+}
