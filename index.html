@@ -6,32 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d3f4ea8622.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="card">
-        <div class="card__body">
-            <div class="card__img"></div>
-
-        </div>
-        <div class="card1">
-            <div class="card1__heading">
-                <h1>Hello World !</h1>
-            </div>
-            <div class="card1__text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus sit assumenda?
-                </p>
-            </div>
-            <div class="card1__contact">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-twitter"></i>
-            </div>
-        </div>
+    <div class="burger">
+        <div class="burger__bars"></div>
     </div>
+    <nav class="nav">
+        <div class="wrapper">
+            <div class="nav__box">
+                <div class="logo">
+                    <a href="#">Logo<span>-Name</span></a>
+                </div>
+                <a href="#">About</a>
+                <a href="#">Galery</a>
+                <a href="#">Recepie</a>
+                <a href="#">Place</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+    <section class="heading">
+        <div class="heading__box">
+            <h1 class="heading__title" 1>Lorem ipsum dolor <span>sit amet.</span></h1>
+            <p class="heading__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+                assumenda.</p>
+            <p class="heading__text">Lorem ipsum dolor sit amet.</p>
+            <a class="heading__btn" href="#">About</a>
+        </div>
+    </section>
 
+    <header></header>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
